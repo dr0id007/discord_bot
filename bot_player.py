@@ -10,8 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = Bot(command_prefix='#')
-token = os.getenv('TOKEN')
-# 'NjU4MjU3NDQ3MzM2NTQyMjIw.XltqrA.v4eHZH8ljAdeuk3mTSwqxpROGcc'
+token = os.getenv('TOKEN')  # replace this with token
 voice = None
 song_list = []
 

@@ -5,10 +5,13 @@ from discord.utils import get
 from discord import FFmpegPCMAudio
 import os
 import asyncio
+from dotenv import load_dotenv
 
+load_dotenv()
 
 client = Bot(command_prefix='#')
-token = 'NjU4MjU3NDQ3MzM2NTQyMjIw.Xf9QGg.V1LtJe8BR3Rm3bsxS-C_OnrC8z4'
+token = os.getenv('TOKEN')
+# 'NjU4MjU3NDQ3MzM2NTQyMjIw.XltqrA.v4eHZH8ljAdeuk3mTSwqxpROGcc'
 voice = None
 song_list = []
 
